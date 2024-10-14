@@ -1,10 +1,10 @@
 name: FreeRDP
 
-# Add a schedule trigger to run the workflow every 30 minutes
 on:
-  workflow_dispatch:
+  # Schedule the workflow to run automatically every 30 minutes
   schedule:
     - cron: '*/30 * * * *'  # Every 30 minutes
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   build:
